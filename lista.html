@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Lista</title>
+<style>
+  .bloquedado {
+    background-color: #fd9f8b;
+  }
+
+  .desbloqueado {
+    background-color: #cef8c6;
+  }
+</style>
+</head>
+<body>
+  <input type="text" id="buscador" placeholder="Buscar por usuario">
+  <button onclick="buscar()">Buscar</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Usuario</th>
+        <th>Bloqueado</th>
+        <th>Apellido</th>
+        <th>Nombre</th>
+        <th>Bloquear</th>
+        <th>Desbloquear</th>
+      </tr>
+    </thead>
+    <tbody id="tablaUsuario">
+    </tbody>
+  </table>
+
+  <script src="lista.js"></script>
+</body>
+</html>
